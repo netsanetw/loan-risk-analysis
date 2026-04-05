@@ -12,7 +12,7 @@ STARTING_TIER: float = 0.5       # 0.5x monthly salary
 MAX_CAP: float = 3.0             # 3.0x monthly salary
 
 # Amount the loan limit increases after each on-time repayment
-STEPWISE_INCREASE: float = 0.5   # +0.5x monthly salary per good repayment
+STEPWISE_INCREASE: float = 0.15   # +0.5x monthly salary per good repayment
 
 # Amount the loan limit is penalised / reset by after a late payment
-PENALTY_RESET: float = 0.5       # Reset back to 0.5x monthly salary
+PENALTY_RESET: float = 0.15     # Reset back to 0.5x monthly salary

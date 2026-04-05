@@ -52,7 +52,7 @@ def simulate(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
 
     # Ensure LatePayment is boolean
-    df["LatePayment"] = df["LatePayment"].astype(str).str.strip().str.lower() == "true"
+    #df["LatePayment"] = df["LatePayment"].astype(str).str.strip().str.lower() == "true"
 
     # Sort so loans are processed in chronological order within each customer
     df = df.sort_values(["CustomerID", "DisbursementDate"]).reset_index(drop=True)
